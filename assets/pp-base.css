@@ -1,0 +1,19 @@
+.pp-container {
+  width: min(100% - 40px, var(--pp-container));
+  margin-inline: auto;
+}
+
+.pp-homepage {
+  width: 100%;
+}
+
+.pp-homepage h1,
+.pp-homepage h2,
+.pp-homepage h3,
+.pp-homepage p {
+  margin-top: 0;
+}
+
+.pp-homepage section {
+  width: 100%;
+}

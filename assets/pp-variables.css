@@ -1,0 +1,21 @@
+:root {
+  --pp-primary: #f47767;
+  --pp-primary-dark: #e86152;
+
+  --pp-text: #171717;
+  --pp-text-light: #666666;
+
+  --pp-background: #ffffff;
+  --pp-background-soft: #faf8f6;
+
+  --pp-border: #e5e5e5;
+
+  --pp-radius-sm: 8px;
+  --pp-radius-md: 14px;
+  --pp-radius-lg: 24px;
+
+  --pp-container: 1280px;
+
+  --pp-shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.06);
+  --pp-shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+}

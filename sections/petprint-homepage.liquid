@@ -1,0 +1,57 @@
+{% render 'petprint-hero',
+  hero_image: section.settings.hero_image,
+  eyebrow: section.settings.eyebrow,
+  heading: section.settings.heading,
+  description: section.settings.description,
+  button_text: section.settings.button_text,
+  button_link: section.settings.button_link
+%}
+
+{% render 'petprint-configurator' %}
+
+{% schema %}
+{
+  "name": "PetPrint Homepage",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero image"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Wear Your Best Friend."
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Turn Your Pet Into a T-Shirt."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Upload your dog's photo and we'll turn it into a beautiful design on a premium T-Shirt."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "CREATE MY T-SHIRT"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PetPrint Homepage"
+    }
+  ]
+}
+{% endschema %}
