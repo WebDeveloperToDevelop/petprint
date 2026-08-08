@@ -1,0 +1,53 @@
+/*=========================================
+PetPrint Announcement Bar
+=========================================*/
+
+.pp-announcement{
+
+    background:#111;
+
+    color:#fff;
+
+    font-size:14px;
+
+    padding:12px 20px;
+
+}
+
+.pp-announcement__container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
+}
+
+.pp-announcement span{
+
+    font-weight:500;
+
+    letter-spacing:.3px;
+
+}
+
+@media(max-width:768px){
+
+.pp-announcement__container{
+
+    gap:15px;
+
+    font-size:13px;
+
+}
+
+}

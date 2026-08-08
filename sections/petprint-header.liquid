@@ -1,0 +1,53 @@
+<header class="pp-header">
+
+    <div class="pp-logo">
+        PetPrint
+    </div>
+
+    <nav class="pp-nav">
+
+        <a href="/">Home</a>
+
+        <a href="/collections/all">
+            Shop
+        </a>
+
+        <a href="#">
+            How it Works
+        </a>
+
+        <a href="#">
+            Reviews
+        </a>
+
+        <a href="#">
+            Contact
+        </a>
+
+    </nav>
+
+    <div class="pp-icons">
+
+        🔍
+
+        👤
+
+        🛒
+
+    </div>
+
+</header>
+
+{{ 'petprint.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "PetPrint Header",
+  "settings": [],
+  "presets": [
+    {
+      "name": "PetPrint Header"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,43 @@
+.pp-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 60px;
+
+    background:#fff;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.pp-nav{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.pp-nav a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-weight:500;
+
+}
+
+.pp-icons{
+
+    display:flex;
+
+    gap:20px;
+
+    font-size:22px;
+
+}
