@@ -1,0 +1,19 @@
+.pp-hero {
+  padding: 100px 0;
+  background: var(--pp-background-soft);
+}
+
+.pp-hero h1 {
+  max-width: 700px;
+  margin-bottom: 20px;
+  font-size: clamp(42px, 6vw, 78px);
+  line-height: 0.95;
+  color: var(--pp-text);
+}
+
+.pp-hero p {
+  max-width: 560px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--pp-text-light);
+}

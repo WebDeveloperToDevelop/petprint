@@ -1,0 +1,1777 @@
+/* =========================================================
+   PETPRINT HERO
+   ========================================================= */
+
+.pp-hero {
+  position: relative;
+  overflow: hidden;
+  background: #f8f3ed;
+  padding: 70px 40px 80px;
+}
+
+.pp-hero__container {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Content */
+
+.pp-hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+.pp-hero__eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #e87561;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pp-hero__title {
+  margin: 0;
+  color: #1d1d1b;
+  font-size: clamp(54px, 6vw, 92px);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+.pp-hero__title span {
+  display: block;
+  color: #e87561;
+}
+
+.pp-hero__description {
+  max-width: 560px;
+  margin: 28px 0 30px;
+  color: #4d4a46;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+/* Features */
+
+.pp-hero__features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+.pp-hero__feature {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #45413d;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.pp-hero__feature span:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.pp-hero__feature strong {
+  font-weight: 700;
+}
+
+.pp-hero__feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #d8cec4;
+  border-radius: 50%;
+  color: #e87561;
+  font-size: 17px;
+}
+
+/* Button */
+
+.pp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 54px;
+  padding: 0 28px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.pp-btn:hover {
+  transform: translateY(-2px);
+}
+
+.pp-btn--primary {
+  background: #e87561;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(232, 117, 97, 0.22);
+}
+
+.pp-btn--primary:hover {
+  background: #d96552;
+}
+
+.pp-btn--primary span {
+  font-size: 22px;
+}
+
+/* Trust */
+
+.pp-hero__trust {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.pp-hero__rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pp-hero__rating span {
+  color: #efa62d;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.pp-hero__rating strong {
+  color: #242321;
+  font-size: 15px;
+}
+
+.pp-hero__trust-text {
+  color: #716b65;
+  font-size: 13px;
+}
+
+/* Hero visual */
+
+.pp-hero__visual {
+  position: relative;
+  min-height: 560px;
+}
+
+.pp-hero__image-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 30px;
+  background: #eee5dc;
+}
+
+.pp-hero__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-hero__image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  background:
+    radial-gradient(
+      circle at 25% 25%,
+      #f5d7c8 0,
+      #f5d7c8 18%,
+      transparent 19%
+    ),
+    linear-gradient(
+      135deg,
+      #eee2d5,
+      #e7c9b9
+    );
+}
+
+.pp-hero__placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: #6b5d53;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pp-hero__placeholder-icon {
+  font-size: 100px;
+}
+
+/* Floating review card */
+
+.pp-hero__badge {
+  position: absolute;
+  right: -25px;
+  bottom: 45px;
+  z-index: 3;
+  width: 180px;
+  padding: 22px 18px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(40, 30, 20, 0.15);
+}
+
+.pp-hero__badge-stars {
+  display: block;
+  margin-bottom: 5px;
+  color: #efa62d;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.pp-hero__badge strong {
+  display: block;
+  color: #242321;
+  font-size: 24px;
+}
+
+.pp-hero__badge small {
+  display: block;
+  margin-top: 6px;
+  color: #716b65;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.pp-hero__heart {
+  position: absolute;
+  top: 35px;
+  right: 30px;
+  z-index: 3;
+  color: #e87561;
+  font-size: 44px;
+  transform: rotate(-12deg);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media screen and (max-width: 990px) {
+
+  .pp-hero {
+    padding: 50px 24px 60px;
+  }
+
+  .pp-hero__container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .pp-hero__content {
+    text-align: center;
+  }
+
+  .pp-hero__description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pp-hero__features {
+    justify-content: center;
+  }
+
+  .pp-hero__trust {
+    justify-content: center;
+  }
+
+  .pp-hero__visual {
+    min-height: 500px;
+  }
+
+  .pp-hero__badge {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .pp-hero {
+    padding: 40px 16px 50px;
+  }
+
+  .pp-hero__title {
+    font-size: 52px;
+  }
+
+  .pp-hero__description {
+    font-size: 16px;
+  }
+
+  .pp-hero__features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    text-align: left;
+  }
+
+  .pp-hero__visual {
+    min-height: 390px;
+  }
+
+  .pp-hero__image-wrapper {
+    border-radius: 20px;
+  }
+
+  .pp-hero__badge {
+    right: 10px;
+    bottom: 20px;
+    width: 150px;
+    padding: 15px 12px;
+  }
+
+  .pp-hero__heart {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+/* =========================================================
+   PETPRINT CONFIGURATOR
+   ========================================================= */
+
+.pp-configurator {
+  padding: 100px 30px;
+  background: #ffffff;
+}
+
+.pp-configurator__container {
+  width: min(1320px, 100%);
+  margin: 0 auto;
+}
+
+
+/* ---------------------------------------------------------
+   HEADER
+--------------------------------------------------------- */
+
+.pp-configurator__header {
+  max-width: 700px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.pp-configurator__eyebrow {
+  margin: 0 0 12px;
+
+  color: #ef7568;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.pp-configurator__title {
+  margin: 0;
+
+  color: #171717;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.pp-configurator__title span {
+  display: block;
+  color: #ef7568;
+}
+
+.pp-configurator__description {
+  max-width: 560px;
+  margin: 20px auto 0;
+
+  color: #666;
+
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+/* ---------------------------------------------------------
+   STEPS
+--------------------------------------------------------- */
+
+.pp-configurator__steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 850px;
+  margin: 0 auto 35px;
+}
+
+.pp-configurator__step {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 28px;
+
+  color: #aaa;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pp-configurator__step:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  right: -1px;
+
+  width: 28px;
+  height: 1px;
+
+  background: #ddd;
+}
+
+.pp-configurator__step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  border: 1px solid #ddd;
+  border-radius: 50%;
+
+  font-size: 11px;
+}
+
+.pp-configurator__step--active {
+  color: #222;
+}
+
+.pp-configurator__step--active .pp-configurator__step-number {
+  border-color: #ef7568;
+
+  background: #ef7568;
+
+  color: #fff;
+}
+
+
+/* ---------------------------------------------------------
+   MAIN CARD
+--------------------------------------------------------- */
+
+.pp-configurator__card {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  overflow: hidden;
+
+  border: 1px solid #e8e2dc;
+  border-radius: 24px;
+
+  background: #fff;
+
+  box-shadow: 0 20px 60px rgba(40, 30, 20, 0.08);
+}
+
+
+/* ---------------------------------------------------------
+   OPTIONS
+--------------------------------------------------------- */
+
+.pp-configurator__options {
+  padding: 45px;
+}
+
+.pp-configurator__section-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+
+  margin-bottom: 40px;
+}
+
+.pp-configurator__section-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: #f9e3de;
+
+  color: #ef7568;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pp-configurator__section-header h3 {
+  margin: 0 0 5px;
+
+  color: #222;
+
+  font-size: 22px;
+}
+
+.pp-configurator__section-header p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   OPTION GROUP
+--------------------------------------------------------- */
+
+.pp-configurator__option-group {
+  margin-bottom: 40px;
+}
+
+.pp-configurator__label {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: #222;
+
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+
+/* ---------------------------------------------------------
+   T-SHIRT OPTIONS
+--------------------------------------------------------- */
+
+.pp-configurator__product-options {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+}
+
+.pp-configurator__product-option {
+  padding: 12px;
+
+  border: 1px solid #ddd7d0;
+  border-radius: 14px;
+
+  background: #fff;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.pp-configurator__product-option:hover {
+  transform: translateY(-2px);
+
+  border-color: #ef7568;
+}
+
+.pp-configurator__product-option--selected {
+  border: 2px solid #ef7568;
+
+  box-shadow: 0 8px 25px rgba(239, 117, 104, 0.12);
+}
+
+.pp-configurator__product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 180px;
+
+  border-radius: 10px;
+
+  background: #f5f1ed;
+}
+
+.pp-configurator__product-image span {
+  font-size: 80px;
+}
+
+.pp-configurator__product-info {
+  padding: 12px 4px 3px;
+}
+
+.pp-configurator__product-info strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #222;
+
+  font-size: 15px;
+}
+
+.pp-configurator__product-info small {
+  color: #777;
+
+  font-size: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   CONTINUE
+--------------------------------------------------------- */
+
+.pp-configurator__actions {
+  display: flex;
+  justify-content: flex-end;
+
+  padding-top: 10px;
+}
+
+.pp-configurator__continue {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+
+  min-height: 50px;
+  padding: 0 24px;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: #ef7568;
+
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.pp-configurator__continue:hover {
+  background: #d96356;
+
+  transform: translateY(-2px);
+}
+
+.pp-configurator__continue span {
+  font-size: 20px;
+}
+
+
+/* ---------------------------------------------------------
+   LIVE PREVIEW
+--------------------------------------------------------- */
+
+.pp-configurator__preview {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 620px;
+
+  background: #f6f1eb;
+}
+
+.pp-configurator__preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 28px 32px;
+
+  border-bottom: 1px solid #e3ddd5;
+}
+
+.pp-configurator__preview-header span:first-child {
+  color: #ef7568;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.pp-configurator__preview-header h3 {
+  margin: 5px 0 0;
+
+  color: #222;
+
+  font-size: 20px;
+}
+
+.pp-configurator__preview-status {
+  color: #888;
+
+  font-size: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   PREVIEW STAGE
+--------------------------------------------------------- */
+
+.pp-configurator__preview-stage {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+}
+
+.pp-configurator__tshirt {
+  position: relative;
+
+  width: 280px;
+  height: 320px;
+
+  background: #202020;
+
+  clip-path: polygon(
+    24% 0%,
+    40% 0%,
+    50% 9%,
+    60% 0%,
+    76% 0%,
+    100% 25%,
+    82% 43%,
+    73% 33%,
+    73% 100%,
+    27% 100%,
+    27% 33%,
+    18% 43%,
+    0% 25%
+  );
+
+  filter: drop-shadow(
+    0 25px 25px rgba(0, 0, 0, 0.18)
+  );
+}
+
+.pp-configurator__tshirt-art {
+  position: absolute;
+
+  top: 42%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px dashed rgba(255,255,255,0.45);
+
+  color: rgba(255,255,255,0.7);
+
+  font-size: 13px;
+}
+
+
+/* ---------------------------------------------------------
+   PREVIEW FOOTER
+--------------------------------------------------------- */
+
+.pp-configurator__preview-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 22px 32px;
+
+  border-top: 1px solid #e3ddd5;
+
+  background: rgba(255,255,255,0.55);
+}
+
+.pp-configurator__preview-footer span {
+  color: #777;
+
+  font-size: 12px;
+}
+
+.pp-configurator__preview-footer strong {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #222;
+
+  font-size: 24px;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media screen and (max-width: 900px) {
+
+  .pp-configurator {
+    padding: 70px 20px;
+  }
+
+  .pp-configurator__card {
+    grid-template-columns: 1fr;
+  }
+
+  .pp-configurator__preview {
+    min-height: 500px;
+  }
+
+  .pp-configurator__steps {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .pp-configurator__step {
+    flex-shrink: 0;
+    padding: 0 15px;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .pp-configurator__header {
+    margin-bottom: 35px;
+  }
+
+  .pp-configurator__title {
+    font-size: 42px;
+  }
+
+  .pp-configurator__description {
+    font-size: 15px;
+  }
+
+  .pp-configurator__options {
+    padding: 25px 20px;
+  }
+
+  .pp-configurator__product-image {
+    height: 130px;
+  }
+
+  .pp-configurator__product-image span {
+    font-size: 60px;
+  }
+
+  .pp-configurator__preview-stage {
+    padding: 30px;
+  }
+
+  .pp-configurator__tshirt {
+    width: 230px;
+    height: 270px;
+  }
+
+  .pp-configurator__preview-footer {
+    padding: 18px 20px;
+  }
+
+}
+
+/* =========================================================
+   T-SHIRT COLOR OPTIONS
+   ========================================================= */
+
+.pp-configurator__color-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+
+.pp-configurator__color-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 8px 12px;
+
+  border: 1px solid #ddd7d0;
+  border-radius: 30px;
+
+  background: #fff;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.pp-configurator__color-option:hover {
+  transform: translateY(-1px);
+
+  border-color: #ef7568;
+}
+
+
+.pp-configurator__color-option--selected {
+  border-color: #ef7568;
+
+  box-shadow: 0 5px 18px rgba(239, 117, 104, 0.12);
+}
+
+
+.pp-configurator__color-swatch {
+  display: block;
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+
+.pp-configurator__color-name {
+  color: #333;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* Colors */
+
+.pp-color-black {
+  background: #202020;
+}
+
+.pp-color-white {
+  background: #ffffff;
+}
+
+.pp-color-navy {
+  background: #1d2a44;
+}
+
+.pp-color-beige {
+  background: #d8c4a8;
+}
+
+.pp-color-pink {
+  background: #e8a4aa;
+}
+
+/* =========================================================
+   LIVE PREVIEW T-SHIRT COLORS
+   ========================================================= */
+
+.pp-tshirt--black {
+  background: #202020;
+}
+
+
+.pp-tshirt--white {
+  background: #ffffff;
+
+  box-shadow:
+    0 20px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+.pp-tshirt--navy {
+  background: #1d2a44;
+}
+
+
+.pp-tshirt--beige {
+  background: #d8c4a8;
+}
+
+
+.pp-tshirt--pink {
+  background: #e8a4aa;
+}
+
+/* =========================================================
+   CONFIGURATOR STEPS
+   ========================================================= */
+
+.pp-configurator__step-content {
+  display: none;
+}
+
+.pp-configurator__step-content--active {
+  display: block;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.pp-configurator__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding-top: 25px;
+}
+
+.pp-configurator__back {
+  min-height: 50px;
+  padding: 0 18px;
+
+  border: 1px solid #ddd7d0;
+  border-radius: 7px;
+
+  background: #fff;
+
+  color: #555;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.pp-configurator__back:hover {
+  border-color: #ef7568;
+  color: #ef7568;
+}
+
+
+/* =========================================================
+   POSITION OPTIONS
+   ========================================================= */
+
+.pp-configurator__position-options {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+}
+
+
+.pp-configurator__position-option {
+  padding: 12px;
+
+  border: 1px solid #ddd7d0;
+  border-radius: 14px;
+
+  background: #fff;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.pp-configurator__position-option:hover {
+  transform: translateY(-2px);
+
+  border-color: #ef7568;
+}
+
+
+.pp-configurator__position-option--selected {
+  border: 2px solid #ef7568;
+
+  box-shadow:
+    0 8px 25px rgba(239, 117, 104, 0.12);
+}
+
+
+.pp-position-preview {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 130px;
+
+  margin-bottom: 12px;
+
+  border-radius: 10px;
+
+  background: #f5f1ed;
+}
+
+
+.pp-position-preview::before {
+  content: "";
+
+  position: absolute;
+
+  width: 90px;
+  height: 105px;
+
+  border-radius: 8px 8px 12px 12px;
+
+  background: #202020;
+}
+
+
+.pp-position-preview span {
+  position: relative;
+  z-index: 2;
+
+  font-size: 25px;
+}
+
+
+.pp-position-preview--left span {
+  transform: translate(-20px, -20px);
+  font-size: 18px;
+}
+
+
+.pp-position-preview--right span {
+  transform: translate(20px, -20px);
+  font-size: 18px;
+}
+
+
+.pp-position-preview--back span {
+  font-size: 30px;
+}
+
+
+.pp-configurator__position-option strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #222;
+
+  font-size: 14px;
+}
+
+
+.pp-configurator__position-option small {
+  color: #777;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 600px) {
+
+  .pp-configurator__position-options {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* =========================================================
+   LIVE PREVIEW POSITION
+   ========================================================= */
+
+.pp-configurator__tshirt {
+  position: relative;
+}
+
+
+/*
+ * Artwork placeholder
+ */
+
+.pp-configurator__tshirt-art {
+  transition:
+    top 0.3s ease,
+    left 0.3s ease,
+    width 0.3s ease,
+    height 0.3s ease;
+}
+
+
+/* CENTER */
+
+.pp-position--center .pp-configurator__tshirt-art {
+  top: 42%;
+  left: 50%;
+
+  width: 100px;
+  height: 100px;
+}
+
+
+/* LEFT CHEST */
+
+.pp-position--left-chest .pp-configurator__tshirt-art {
+  top: 28%;
+  left: 35%;
+
+  width: 55px;
+  height: 55px;
+
+  font-size: 10px;
+}
+
+
+/* RIGHT CHEST */
+
+.pp-position--right-chest .pp-configurator__tshirt-art {
+  top: 28%;
+  left: 65%;
+
+  width: 55px;
+  height: 55px;
+
+  font-size: 10px;
+}
+
+
+/* BACK */
+
+.pp-position--back .pp-configurator__tshirt-art {
+  top: 45%;
+  left: 50%;
+
+  width: 120px;
+  height: 120px;
+}
+
+/* =========================================================
+   UPLOAD PLACEHOLDER
+   ========================================================= */
+
+.pp-upload-placeholder {
+  padding: 50px 30px;
+
+  border: 2px dashed #ddd7d0;
+  border-radius: 18px;
+
+  background: #faf8f5;
+
+  text-align: center;
+}
+
+.pp-upload-placeholder__icon {
+  margin-bottom: 15px;
+
+  font-size: 42px;
+}
+
+.pp-upload-placeholder h4 {
+  margin: 0 0 8px;
+
+  color: #222;
+
+  font-size: 18px;
+}
+
+.pp-upload-placeholder p {
+  margin: 0 0 20px;
+
+  color: #888;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   STYLE OPTIONS
+   ========================================================= */
+
+.pp-style-options {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+}
+
+.pp-style-option {
+  padding: 25px 15px;
+
+  border: 1px solid #ddd7d0;
+  border-radius: 14px;
+
+  background: #fff;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.pp-style-option:hover {
+  border-color: #ef7568;
+}
+
+.pp-style-option--selected {
+  border: 2px solid #ef7568;
+
+  box-shadow:
+    0 8px 25px rgba(239, 117, 104, 0.12);
+}
+
+.pp-style-option strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #222;
+}
+
+.pp-style-option small {
+  color: #777;
+
+  font-size: 12px;
+}
+
+/* =========================================================
+   PET PHOTO UPLOAD
+   ========================================================= */
+
+.pp-upload {
+  width: 100%;
+}
+
+
+/*
+ * Hide native file input.
+ */
+
+.pp-upload__input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  margin: -1px;
+  padding: 0;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+
+  border: 0;
+
+  opacity: 0;
+}
+
+
+/*
+ * Dropzone
+ */
+
+.pp-upload__dropzone {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 220px;
+
+  padding: 30px;
+
+  border: 2px dashed #ddd7d0;
+  border-radius: 18px;
+
+  background: #faf8f5;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.pp-upload__dropzone:hover {
+  border-color: #ef7568;
+
+  background: #fff8f6;
+
+  transform: translateY(-1px);
+}
+
+
+.pp-upload__icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+
+  margin-bottom: 15px;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  font-size: 28px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+.pp-upload__dropzone strong {
+  margin-bottom: 7px;
+
+  color: #222;
+
+  font-size: 17px;
+}
+
+
+.pp-upload__text {
+  margin-bottom: 7px;
+
+  color: #ef7568;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+.pp-upload__dropzone small {
+  color: #888;
+
+  font-size: 12px;
+}
+
+
+/*
+ * Selected image
+ */
+
+.pp-upload__selected {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 15px;
+
+  padding: 12px;
+
+  border: 1px solid #e5dfd8;
+
+  border-radius: 12px;
+
+  background: #fff;
+}
+
+
+.pp-upload__thumbnail {
+  flex-shrink: 0;
+
+  width: 58px;
+  height: 58px;
+
+  overflow: hidden;
+
+  border-radius: 9px;
+
+  background: #f5f1ed;
+}
+
+
+.pp-upload__thumbnail img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: cover;
+}
+
+
+.pp-upload__details {
+  display: flex;
+
+  flex: 1;
+
+  flex-direction: column;
+
+  min-width: 0;
+
+  gap: 4px;
+}
+
+
+.pp-upload__details strong {
+  overflow: hidden;
+
+  color: #333;
+
+  font-size: 13px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.pp-upload__details span {
+  color: #888;
+
+  font-size: 12px;
+}
+
+
+.pp-upload__remove {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: #f5f1ed;
+
+  color: #555;
+
+  font-size: 22px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+
+.pp-upload__remove:hover {
+  background: #ef7568;
+
+  color: #fff;
+}
+
+
+/*
+ * Upload error
+ */
+
+.pp-upload__error {
+  margin: 10px 0 0;
+
+  color: #c0392b;
+
+  font-size: 13px;
+}
+
+/* =========================================================
+   PET ARTWORK PREVIEW
+   ========================================================= */
+
+.pp-configurator__tshirt-art {
+  position: absolute;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  pointer-events: none;
+
+  transform: translate(-50%, -50%);
+
+  transition:
+    top 0.3s ease,
+    left 0.3s ease,
+    width 0.3s ease,
+    height 0.3s ease;
+}
+
+
+/*
+ * Placeholder
+ */
+
+.pp-configurator__tshirt-art-placeholder {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: 35px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+
+  border-radius: 10px;
+}
+
+
+/*
+ * Actual pet image
+ */
+
+.pp-configurator__pet-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  border-radius: 8px;
+}
+
+
+/*
+ * Center
+ */
+
+.pp-position--center .pp-configurator__tshirt-art {
+  top: 48%;
+  left: 50%;
+
+  width: 105px;
+  height: 105px;
+}
+
+
+/*
+ * Left chest
+ */
+
+.pp-position--left-chest .pp-configurator__tshirt-art {
+  top: 31%;
+  left: 37%;
+
+  width: 55px;
+  height: 55px;
+}
+
+
+/*
+ * Right chest
+ */
+
+.pp-position--right-chest .pp-configurator__tshirt-art {
+  top: 31%;
+  left: 63%;
+
+  width: 55px;
+  height: 55px;
+}
+
+
+/*
+ * Back
+ */
+
+.pp-position--back .pp-configurator__tshirt-art {
+  top: 48%;
+  left: 50%;
+
+  width: 125px;
+  height: 125px;
+}
+
+[data-preview-pet-image] {
+  /* display: none; */
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 120px;
+  height: 120px;
+
+  max-width: 120px;
+  max-height: 120px;
+
+  object-fit: cover;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 12px;
+
+  z-index: 5;
+}

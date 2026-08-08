@@ -1,0 +1,874 @@
+<section
+  id="petprint-configurator"
+  class="pp-configurator"
+  data-petprint-configurator
+>
+
+  <div class="pp-configurator__container">
+
+    <!-- Header -->
+
+    <div class="pp-configurator__header">
+
+      <p class="pp-configurator__eyebrow">
+        CREATE YOUR OWN
+      </p>
+
+      <h2 class="pp-configurator__title">
+        Design a T-Shirt
+        <span>Your Pet Would Love.</span>
+      </h2>
+
+      <p class="pp-configurator__description">
+        Choose your T-shirt, customize it with your pet's photo,
+        and create something completely yours.
+      </p>
+
+    </div>
+
+
+    <!-- Steps -->
+
+    <div class="pp-configurator__steps">
+
+      <div class="pp-configurator__step pp-configurator__step--active">
+
+        <span class="pp-configurator__step-number">
+          01
+        </span>
+
+        <span class="pp-configurator__step-label">
+          T-Shirt
+        </span>
+
+      </div>
+
+
+      <div class="pp-configurator__step">
+
+        <span class="pp-configurator__step-number">
+          02
+        </span>
+
+        <span class="pp-configurator__step-label">
+          Color
+        </span>
+
+      </div>
+
+
+      <div class="pp-configurator__step">
+
+        <span class="pp-configurator__step-number">
+          03
+        </span>
+
+        <span class="pp-configurator__step-label">
+          Position
+        </span>
+
+      </div>
+
+
+      <div class="pp-configurator__step">
+
+        <span class="pp-configurator__step-number">
+          04
+        </span>
+
+        <span class="pp-configurator__step-label">
+          Upload
+        </span>
+
+      </div>
+
+
+      <div class="pp-configurator__step">
+
+        <span class="pp-configurator__step-number">
+          05
+        </span>
+
+        <span class="pp-configurator__step-label">
+          Style
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- Main Configurator -->
+
+    <div class="pp-configurator__card">
+
+
+      <!-- LEFT SIDE -->
+
+      <div class="pp-configurator__options">    
+        <div class="pp-configurator__step-content pp-configurator__step-content--active" data-configurator-step="1">
+            <div class="pp-configurator__section-header">
+
+            <span class="pp-configurator__section-number">
+                01
+            </span>
+
+            <div>
+
+                <h3>
+                Choose Your T-Shirt
+                </h3>
+
+                <p>
+                Select your preferred T-shirt style.
+                </p>
+
+            </div>
+
+            </div>
+        
+
+
+        <!-- T-Shirt Type -->
+
+        <div class="pp-configurator__option-group">
+
+          <label class="pp-configurator__label">
+            T-Shirt Type
+          </label>
+
+
+          <div class="pp-configurator__product-options">
+
+
+            <!-- Half Sleeve -->
+
+            <button
+              type="button"
+              class="pp-configurator__product-option pp-configurator__product-option--selected"
+              data-tshirt-type="half-sleeve"
+            >
+
+              <div class="pp-configurator__product-image">
+
+                <span>
+                  👕
+                </span>
+
+              </div>
+
+              <div class="pp-configurator__product-info">
+
+                <strong>
+                  Half Sleeve
+                </strong>
+
+                <small>
+                  Classic fit
+                </small>
+
+              </div>
+
+            </button>
+
+
+            <!-- Full Sleeve -->
+
+            <button
+              type="button"
+              class="pp-configurator__product-option"
+              data-tshirt-type="full-sleeve"
+            >
+
+              <div class="pp-configurator__product-image">
+
+                <span>
+                  👕
+                </span>
+
+              </div>
+
+              <div class="pp-configurator__product-info">
+
+                <strong>
+                  Full Sleeve
+                </strong>
+
+                <small>
+                  Comfortable fit
+                </small>
+
+              </div>
+
+            </button>
+
+
+          </div>
+
+
+        </div>
+        <div class="pp-configurator__actions">
+            <button
+            type="button"
+            class="pp-configurator__continue"
+            data-configurator-next
+            >
+            Continue
+            <span>→</span>
+            </button>
+
+        </div>
+    </div>
+    
+    <div class="pp-configurator__step-content" data-configurator-step="2">
+
+        <!-- =====================================================
+        T-SHIRT COLOR
+        ===================================================== -->
+
+        <div class="pp-configurator__option-group">
+
+        <label class="pp-configurator__label">
+            T-Shirt Color
+        </label>
+
+
+            <div class="pp-configurator__color-options">
+
+
+                <!-- BLACK -->
+
+                <button
+                type="button"
+                class="pp-configurator__color-option pp-configurator__color-option--selected"
+                data-tshirt-color="black"
+                aria-label="Black"
+                >
+
+                <span
+                    class="pp-configurator__color-swatch pp-color-black"
+                ></span>
+
+                <span class="pp-configurator__color-name">
+                    Black
+                </span>
+
+                </button>
+
+
+                <!-- WHITE -->
+
+                <button
+                type="button"
+                class="pp-configurator__color-option"
+                data-tshirt-color="white"
+                aria-label="White"
+                >
+
+                <span
+                    class="pp-configurator__color-swatch pp-color-white"
+                ></span>
+
+                <span class="pp-configurator__color-name">
+                    White
+                </span>
+
+                </button>
+
+
+                <!-- NAVY -->
+
+                <button
+                type="button"
+                class="pp-configurator__color-option"
+                data-tshirt-color="navy"
+                aria-label="Navy"
+                >
+
+                <span
+                    class="pp-configurator__color-swatch pp-color-navy"
+                ></span>
+
+                <span class="pp-configurator__color-name">
+                    Navy
+                </span>
+
+                </button>
+
+
+                <!-- BEIGE -->
+
+                <button
+                type="button"
+                class="pp-configurator__color-option"
+                data-tshirt-color="beige"
+                aria-label="Beige"
+                >
+
+                <span
+                    class="pp-configurator__color-swatch pp-color-beige"
+                ></span>
+
+                <span class="pp-configurator__color-name">
+                    Beige
+                </span>
+
+                </button>
+
+
+                <!-- PINK -->
+
+                <button
+                type="button"
+                class="pp-configurator__color-option"
+                data-tshirt-color="pink"
+                aria-label="Pink"
+                >
+
+                <span
+                    class="pp-configurator__color-swatch pp-color-pink"
+                ></span>
+
+                <span class="pp-configurator__color-name">
+                    Pink
+                </span>
+
+                </button>
+
+
+            </div>
+
+        </div>
+        <div class="pp-configurator__actions">
+            <button
+            type="button"
+            class="pp-configurator__back"
+            data-configurator-back
+            >
+            ← Back
+            </button>
+
+
+            <button
+            type="button"
+            class="pp-configurator__continue"
+            data-configurator-next
+            >
+            Continue
+            <span>→</span>
+            </button>
+
+        </div>
+    </div>
+
+    <!-- =====================================================
+     STEP 3 — POSITION
+     ===================================================== -->
+
+    <div
+    class="pp-configurator__step-content"
+    data-configurator-step="3"
+    >
+
+    <div class="pp-configurator__section-header">
+
+        <span class="pp-configurator__section-number">
+        03
+        </span>
+
+        <div>
+
+        <h3>
+            Choose Artwork Position
+        </h3>
+
+        <p>
+            Where would you like your pet artwork?
+        </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pp-configurator__option-group">
+
+        <label class="pp-configurator__label">
+        Artwork Position
+        </label>
+
+
+        <div class="pp-configurator__position-options">
+
+
+        <!-- CENTER -->
+
+        <button
+            type="button"
+            class="pp-configurator__position-option pp-configurator__position-option--selected"
+            data-art-position="center"
+        >
+
+            <div class="pp-position-preview pp-position-preview--center">
+            <span>🐕</span>
+            </div>
+
+            <strong>
+            Center
+            </strong>
+
+            <small>
+            Front center
+            </small>
+
+        </button>
+
+
+        <!-- LEFT CHEST -->
+
+        <button
+            type="button"
+            class="pp-configurator__position-option"
+            data-art-position="left-chest"
+        >
+
+            <div class="pp-position-preview pp-position-preview--left">
+            <span>🐕</span>
+            </div>
+
+            <strong>
+            Left Chest
+            </strong>
+
+            <small>
+            Small artwork
+            </small>
+
+        </button>
+
+
+        <!-- RIGHT CHEST -->
+
+        <button
+            type="button"
+            class="pp-configurator__position-option"
+            data-art-position="right-chest"
+        >
+
+            <div class="pp-position-preview pp-position-preview--right">
+            <span>🐕</span>
+            </div>
+
+            <strong>
+            Right Chest
+            </strong>
+
+            <small>
+            Small artwork
+            </small>
+
+        </button>
+
+
+        <!-- BACK -->
+
+        <button
+            type="button"
+            class="pp-configurator__position-option"
+            data-art-position="back"
+        >
+
+            <div class="pp-position-preview pp-position-preview--back">
+            <span>🐕</span>
+            </div>
+
+            <strong>
+            Back
+            </strong>
+
+            <small>
+            Large artwork
+            </small>
+
+        </button>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="pp-configurator__actions">
+
+        <button
+        type="button"
+        class="pp-configurator__back"
+        data-configurator-back
+        >
+        ← Back
+        </button>
+
+
+        <button
+        type="button"
+        class="pp-configurator__continue"
+        data-configurator-next
+        >
+        Continue
+        <span>→</span>
+        </button>
+
+    </div>
+
+    </div>
+
+    <!-- =====================================================
+    STEP 4 — UPLOAD
+    ===================================================== -->
+
+    <div
+    class="pp-configurator__step-content"
+    data-configurator-step="4"
+    >
+
+    <div class="pp-configurator__section-header">
+
+        <span class="pp-configurator__section-number">
+        04
+        </span>
+
+        <div>
+
+        <h3>
+            Upload Your Pet Photo
+        </h3>
+
+        <p>
+            We'll use your photo to create your custom artwork.
+        </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==============================
+        PET PHOTO UPLOAD
+        ============================== -->
+
+    <div class="pp-upload">
+
+        <!-- Hidden file input -->
+
+        <input
+        type="file"
+        id="pp-pet-photo"
+        class="pp-upload__input"
+        data-pet-photo-input
+        accept="image/jpeg,image/png,image/webp"
+        >
+
+
+        <!-- Upload dropzone -->
+
+        <label
+        for="pp-pet-photo"
+        class="pp-upload__dropzone"
+        data-pet-photo-dropzone
+        >
+
+        <span class="pp-upload__icon">
+            📷
+        </span>
+
+        <strong>
+            Upload Your Pet Photo
+        </strong>
+
+        <span class="pp-upload__text">
+            Click to choose a photo
+        </span>
+
+        <small>
+            JPG, PNG or WEBP · Maximum 10MB
+        </small>
+
+        </label>
+
+
+        <!-- Selected photo information -->
+
+        <div
+        class="pp-upload__selected"
+        data-pet-photo-selected
+        hidden
+        >
+
+        <div class="pp-upload__thumbnail">
+
+            <img
+            src=""
+            alt="Selected pet"
+            data-pet-photo-thumbnail
+            width="100"
+            height="100"
+            >
+
+        </div>
+
+
+        <div class="pp-upload__details">
+
+            <strong data-pet-photo-name>
+            Pet photo
+            </strong>
+
+            <span data-pet-photo-size>
+            0 KB
+            </span>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="pp-upload__remove"
+            data-pet-photo-remove
+            aria-label="Remove pet photo"
+        >
+            ×
+        </button>
+
+        </div>
+
+
+        <!-- Upload error -->
+
+        <div
+        class="pp-upload__error"
+        data-pet-photo-error
+        hidden
+        ></div>
+
+    </div>
+
+
+    <!-- Step actions -->
+
+    <div class="pp-configurator__actions">
+
+        <button
+        type="button"
+        class="pp-configurator__back"
+        data-configurator-back
+        >
+        ← Back
+        </button>
+
+
+        <button
+        type="button"
+        class="pp-configurator__continue"
+        data-configurator-next
+        >
+        Continue
+        <span>→</span>
+        </button>
+
+    </div>
+
+    </div>
+
+
+    <!-- =====================================================
+        STEP 5 — STYLE
+        ===================================================== -->
+
+    <div
+    class="pp-configurator__step-content"
+    data-configurator-step="5"
+    >
+
+    <div class="pp-configurator__section-header">
+
+        <span class="pp-configurator__section-number">
+        05
+        </span>
+
+        <div>
+
+        <h3>
+            Choose Your Style
+        </h3>
+
+        <p>
+            Select how you'd like your pet artwork to look.
+        </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pp-style-options">
+
+        <button
+        type="button"
+        class="pp-style-option pp-style-option--selected"
+        data-art-style="original"
+        >
+        <strong>Original</strong>
+        <small>Keep it natural</small>
+        </button>
+
+
+        <button
+        type="button"
+        class="pp-style-option"
+        data-art-style="cartoon"
+        >
+        <strong>Cartoon</strong>
+        <small>Fun cartoon style</small>
+        </button>
+
+
+        <button
+        type="button"
+        class="pp-style-option"
+        data-art-style="sketch"
+        >
+        <strong>Sketch</strong>
+        <small>Hand drawn look</small>
+        </button>
+
+
+        <button
+        type="button"
+        class="pp-style-option"
+        data-art-style="pop-art"
+        >
+        <strong>Pop Art</strong>
+        <small>Bold and colourful</small>
+        </button>
+
+    </div>
+
+
+    <div class="pp-configurator__actions">
+
+        <button
+        type="button"
+        class="pp-configurator__back"
+        data-configurator-back
+        >
+        ← Back
+        </button>
+
+        <button
+        type="button"
+        class="pp-configurator__continue"
+        data-configurator-next
+        >
+        Continue
+        <span>→</span>
+        </button>
+
+    </div>
+
+    </div>
+
+
+      </div>
+
+
+      <!-- RIGHT SIDE / LIVE PREVIEW -->
+
+<div class="pp-configurator__preview">
+
+  <div class="pp-configurator__preview-header">
+
+    <div>
+
+      <span>
+        LIVE PREVIEW
+      </span>
+
+      <h3>
+        Your T-Shirt
+      </h3>
+
+    </div>
+
+    <span class="pp-configurator__preview-status">
+      Step 1 of 5
+    </span>
+
+  </div>
+
+
+  <div class="pp-configurator__preview-stage">
+
+    <div
+      class="pp-configurator__tshirt pp-tshirt--half-sleeve pp-tshirt--black"
+      data-preview-tshirt
+    >
+
+      <!-- Pet artwork -->
+
+      <div
+        class="pp-configurator__tshirt-art"
+        data-preview-art
+      >
+
+        <span
+          class="pp-configurator__tshirt-art-placeholder"
+          data-preview-art-placeholder
+        >
+          🐕
+        </span>
+
+
+        <img
+          data-preview-pet-image
+          class="pp-configurator__pet-image"
+          src=""
+          alt="Pet preview"
+          width="100"
+          height="100"
+          hidden
+        >
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="pp-configurator__preview-footer">
+
+    <div>
+
+      <span>
+        Starting from
+      </span>
+
+      <strong>
+        ₹999
+      </strong>
+
+    </div>
+
+    <span>
+      Inclusive of taxes
+    </span>
+
+  </div>
+
+</div>
+
+    </div>
+
+  </div>
+
+</section>

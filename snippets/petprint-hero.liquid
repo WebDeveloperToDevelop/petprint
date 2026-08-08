@@ -1,0 +1,179 @@
+{% comment %} <section class="pp-hero">
+
+  <div class="pp-hero__content">
+
+    <div class="pp-hero__text">
+
+      <span class="pp-hero__eyebrow">
+        Made for your best friend
+      </span>
+
+      <h1 class="pp-hero__title">
+        Turn Your Pet Into
+        <span>Something You Can Wear</span>
+      </h1>
+
+      <p class="pp-hero__description">
+        Upload your favorite pet photo and create a
+        custom t-shirt designed just for you.
+      </p>
+
+      <div class="pp-hero__actions">
+
+        <a href="#petprint-configurator" class="pp-button pp-button--primary">
+          Create Your T-Shirt
+        </a>
+
+        <a href="#how-it-works" class="pp-button pp-button--secondary">
+          How It Works
+        </a>
+
+      </div>
+
+      <div class="pp-hero__trust">
+
+        <div class="pp-hero__trust-item">
+          <strong>5000+</strong>
+          <span>Happy Pet Parents</span>
+        </div>
+
+        <div class="pp-hero__trust-item">
+          <strong>★★★★★</strong>
+          <span>Customer Rated</span>
+        </div>
+
+        <div class="pp-hero__trust-item">
+          <strong>Made in India</strong>
+          <span>Premium Quality</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="pp-hero__visual">
+
+      <div class="pp-hero__image-placeholder">
+        <span>🐶</span>
+        <p>Your Pet Photo</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section> {% endcomment %}
+
+<section class="pp-hero">
+  <div class="pp-hero__container">
+
+    <div class="pp-hero__content">
+
+      <div class="pp-hero__eyebrow">
+        Your Pet. Your Story. Your T-Shirt.
+      </div>
+
+      <h1 class="pp-hero__title">
+        Wear Your
+        <span>Best Friend.</span>
+      </h1>
+
+      <p class="pp-hero__description">
+        Upload your pet's photo and turn it into a beautiful
+        personalized design on a premium T-shirt.
+      </p>
+
+      <div class="pp-hero__features">
+
+        <div class="pp-hero__feature">
+          <span class="pp-hero__feature-icon">✦</span>
+          <span>
+            <strong>Premium</strong>
+            Cotton
+          </span>
+        </div>
+
+        <div class="pp-hero__feature">
+          <span class="pp-hero__feature-icon">✧</span>
+          <span>
+            <strong>HD</strong>
+            Printing
+          </span>
+        </div>
+
+        <div class="pp-hero__feature">
+          <span class="pp-hero__feature-icon">♡</span>
+          <span>
+            <strong>Made in</strong>
+            India
+          </span>
+        </div>
+
+        <div class="pp-hero__feature">
+          <span class="pp-hero__feature-icon">→</span>
+          <span>
+            <strong>Fast</strong>
+            Delivery
+          </span>
+        </div>
+
+      </div>
+
+      <a href="#petprint-configurator" class="pp-btn pp-btn--primary">
+        Create My T-Shirt
+        <span>→</span>
+      </a>
+
+      <div class="pp-hero__trust">
+        <div class="pp-hero__rating">
+          <span>★★★★★</span>
+          <strong>4.9/5</strong>
+        </div>
+
+        <div class="pp-hero__trust-text">
+          From 1200+ happy pet parents
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pp-hero__visual">
+
+      <div class="pp-hero__image-wrapper">
+
+        {% if section.settings.hero_image != blank %}
+
+          {{
+            section.settings.hero_image
+            | image_url: width: 1400
+            | image_tag:
+              class: 'pp-hero__image',
+              loading: 'eager',
+              widths: '600, 800, 1000, 1200, 1400'
+          }}
+
+        {% else %}
+
+          <div class="pp-hero__image-placeholder">
+            <div class="pp-hero__placeholder-content">
+              <span class="pp-hero__placeholder-icon">🐶</span>
+              <span>Your Pet</span>
+            </div>
+          </div>
+
+        {% endif %}
+
+      </div>
+
+      <div class="pp-hero__badge">
+        <span class="pp-hero__badge-stars">★★★★★</span>
+        <strong>4.9/5</strong>
+        <small>From 1200+ Happy Pet Parents</small>
+      </div>
+
+      <div class="pp-hero__heart">♡</div>
+
+    </div>
+
+  </div>
+</section>
